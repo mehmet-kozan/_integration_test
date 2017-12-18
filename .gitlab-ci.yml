@@ -1,0 +1,33 @@
+image: node:8.9.3
+
+stages:
+  - install
+  - test
+
+before_script:
+  - git config --global user.email $GITLAB_USER_EMAIL
+  - git config --global user.name $GITLAB_USER_LOGIN
+
+after_script:
+  - echo "end of script"
+
+package_install:
+  stage: install
+  script:
+    - pwd
+    - rm -rf  _integration_test
+    - mkdir _integration_test
+    - cd _integration_test
+    - pwd
+    - npm install --save --save-dev --save-exact
+
+mocha_test:
+  stage: test
+  script:
+    - pwd
+    - rm -rf  _integration_test
+    - mkdir _integration_test
+    - cd _integration_test
+    - pwd
+    - npm install --save --save-dev --save-exact
+    - npm run test

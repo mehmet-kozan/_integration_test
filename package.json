@@ -1,6 +1,6 @@
 {
   "name": "mehmet-integration-test",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Not for end user usage, for internal test of my npm packages.",
   "main": "_integration_test.js",
   "keywords": [
@@ -22,6 +22,7 @@
   },
   "devDependencies": {
     "mocha": "^4.0.1",
+    "mocha-junit-reporter": "^1.15.0",
     "path": "^0.12.7"
   },
   "scripts": {

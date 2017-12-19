@@ -35,7 +35,8 @@
     "test": "mocha --recursive",
     "start": "node _integration_test.js",
     "cover": "node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha",
-    "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | node_modules/.bin/coveralls"
+    "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | node_modules/.bin/coveralls",
+    "bithound": "node_modules/.bin/bithound check git@github.com:mehmet-kozan/_integration_test.git"
   },
   "homepage": "https://gitlab.com/autokent/_integration_test",
   "bugs": {

@@ -1,0 +1,17 @@
+os:
+  - linux
+
+branches:
+  only:
+    - master
+
+env:
+  - NODE_VERSION="6.8.1"
+
+script: ./travis-build.sh
+
+
+notifications:
+  email:
+    on_success: never
+    on_failure: change

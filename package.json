@@ -1,7 +1,7 @@
 {
   "name": "mehmet-integration-test",
   "version": "1.1.1",
-  "description": "A nodejs module to extract links from Google, Bing etc..",
+  "description": "Not for end user usage, for internal test of my npm packages.",
   "main": "_integration_test.js",
   "keywords": [
     "integration-test"

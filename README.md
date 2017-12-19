@@ -16,3 +16,5 @@
 [![buddy pipeline](https://app.buddy.works/mehmetkozan/-integration-test/pipelines/pipeline/67600/badge.svg?token=6d32b8c49d792c4c026b894a8cabfa1b70c6509effc898620d7265f5aa3612f3 "buddy pipeline")](https://app.buddy.works/mehmetkozan/-integration-test/pipelines/pipeline/67600)
 
 [![Build Status](https://semaphoreci.com/api/v1/mehmet-kozan/_integration_test/branches/master/badge.svg)](https://semaphoreci.com/mehmet-kozan/_integration_test)
+
+[![Coverage Status](https://coveralls.io/repos/github/mehmet-kozan/_integration_test/badge.svg?branch=master)](https://coveralls.io/github/mehmet-kozan/_integration_test?branch=master)

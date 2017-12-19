@@ -16,8 +16,10 @@ script:
   - mkdir _integration_test
   - cd _integration_test
   - pwd
+  - rm -rf node_modules
   - npm install --save --save-dev --save-exact
   - npm run test
+  - npm run coveralls
 
 notifications:
   email:

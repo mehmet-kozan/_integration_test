@@ -1,15 +1,25 @@
 os:
   - linux
 
+language: node_js
+
+node_js:
+  - "lts/*"
+
 branches:
   only:
     - master
 
-env:
-  - NODE_VERSION="6.8.1"
+script: 
+  - pwd
+  - rm -rf  _integration_test
+  - mkdir _integration_test
+  - cd _integration_test
+  - pwd
+  - npm install --save --save-dev --save-exact
+  - npm run test
 
-script: ./travis-build.sh
-
+before_install: npm install -g npm@latest-2
 
 notifications:
   email:

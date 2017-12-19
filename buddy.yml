@@ -1,0 +1,25 @@
+- pipeline: "integration_test"
+  trigger_mode: "SCHEDULED"
+  ref_name: "master"
+  start_date: "2017-12-19T14:47:00.000Z"
+  delay: 60
+  run_always: true
+  no_skip_to_most_recent: true
+  actions:
+  - action: "Execute: npm test"
+    type: "BUILD"
+    docker_image_name: "library/node"
+    docker_image_tag: "latest"
+    execute_commands:
+    - "npm install"
+    - "npm test"
+    setup_commands:
+    - "npm install -g gulp grunt-cli"
+    trigger_condition: "ALWAYS"
+  - action: "Execute: rm -rf node_modules"
+    type: "BUILD"
+    docker_image_name: "library/ubuntu"
+    docker_image_tag: "16.04"
+    execute_commands:
+    - "rm -rf node_modules"
+    trigger_condition: "ALWAYS"

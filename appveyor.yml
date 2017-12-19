@@ -1,0 +1,11 @@
+build: off
+
+install:
+  - ps: Install-Product node ''
+  - npm install --save-dev
+
+test_script:
+  - node --version
+  - npm --version
+  - npm install --save-dev
+  - npm run test

@@ -18,3 +18,5 @@
 [![Build Status](https://semaphoreci.com/api/v1/mehmet-kozan/_integration_test/branches/master/badge.svg)](https://semaphoreci.com/mehmet-kozan/_integration_test)
 
 [![Coverage Status](https://coveralls.io/repos/github/mehmet-kozan/_integration_test/badge.svg?branch=master)](https://coveralls.io/github/mehmet-kozan/_integration_test?branch=master)
+
+[![bitHound Dependencies](https://www.bithound.io/github/mehmet-kozan/_integration_test/badges/dependencies.svg)](https://www.bithound.io/github/mehmet-kozan/_integration_test/master/dependencies/npm)

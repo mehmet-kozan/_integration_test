@@ -19,6 +19,7 @@ script:
   - rm -rf node_modules
   - npm install --save --save-dev --save-exact
   - npm run test
+  - bithound check git@github.com:mehmet-kozan/_integration_test.git
   - npm run coveralls
 
 notifications:

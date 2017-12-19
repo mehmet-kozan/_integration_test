@@ -5,9 +5,9 @@
 workflows:
   version: 2
   nightly:
-  triggers:
-    - schedule:
-        cron: "0 * * * *"
+    triggers:
+      - schedule:
+          cron: "0 * * * *"
   jobs:
     build:
       docker:

@@ -6,9 +6,9 @@ language: node_js
 node_js:
   - "lts/*"
 
-branches:
-  only:
-    - master
+#branches:
+#  only:
+#    - master
 
 script: 
   - pwd

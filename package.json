@@ -1,53 +1,55 @@
 {
-  "name": "mehmet-integration-test",
-  "version": "1.1.3",
-  "description": "Not for end user usage, for internal test of my npm packages.",
-  "main": "_integration_test.js",
-  "keywords": [
-    "integration-test"
-  ],
-  "dependencies": {
-    "email-syntax-check": "^1.1.3",
-    "csv-config": "^1.1.4",
-    "search-engine-client": "^1.1.3",
-    "crawler-url-parser": "^1.5.1",
-    "crawler-request": "^1.1.3",
-    "polarity-rate": "^1.1.3",
-    "email-format-check": "^1.1.3",
-    "easy-match": "^1.1.5",
-    "email-domain-check": "^1.1.3",
-    "extract-email": "^1.1.3",
-    "text-keyword-extract": "^0.1.1",
-    "email-smtp-check": "^0.1.0"
-  },
-  "devDependencies": {
-    "mocha": "^4.0.1",
-    "mocha-junit-reporter": "^1.15.0",
-    "path": "^0.12.7",
-    "coveralls": "^3.0.0",
-    "mocha-lcov-reporter": "^1.3.0",
-    "bithound": "^1.7.0",
-    "istanbul": "^0.4.5"
-  },
-  "scripts": {
-    "test": "mocha --recursive",
-    "start": "node _integration_test.js",
-    "cover": "node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha",
-    "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | node_modules/.bin/coveralls",
-    "bithound": "node_modules/.bin/bithound check git@github.com:mehmet-kozan/_integration_test.git"
-  },
-  "homepage": "https://gitlab.com/autokent/_integration_test",
-  "bugs": {
-    "url": "https://gitlab.com/autokent/_integration_test",
-    "email": "mehmet.kozan@live.com"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://gitlab.com/autokent/_integration_test"
-  },
-  "author": "Mehmet Kozan <mehmet.kozan@live.com>",
-  "license": "MIT",
-  "engines": {
-    "node": ">=6.8.1"
-  }
+	"name": "mehmet-integration-test",
+	"version": "1.1.3",
+	"description": "Not for end user usage, for internal test of my npm packages.",
+	"main": "_integration_test.js",
+	"keywords": [
+		"integration-test"
+	],
+	"dependencies": {
+		"email-syntax-check": "^1.1.3",
+		"semantic-crawler": "^0.0.2",
+		"url-clean": "^1.0.2",
+		"csv-config": "^1.1.4",
+		"search-engine-client": "^1.2.4",
+		"crawler-url-parser": "^2.0.2",
+		"crawler-request": "^1.1.4",
+		"polarity-rate": "^1.1.4",
+		"email-format-check": "^1.1.3",
+		"easy-match": "^1.1.5",
+		"email-domain-check": "^1.1.4",
+		"extract-email": "^1.1.3",
+		"text-keyword-extract": "^0.1.1",
+		"email-smtp-check": "^0.1.1"
+	},
+	"devDependencies": {
+		"mocha": "^4.1.0",
+		"mocha-junit-reporter": "^1.15.0",
+		"path": "^0.12.7",
+		"coveralls": "^3.0.0",
+		"mocha-lcov-reporter": "^1.3.0",
+		"bithound": "^1.7.0",
+		"istanbul": "^0.4.5"
+	},
+	"scripts": {
+		"test": "mocha --recursive",
+		"start": "node _integration_test.js",
+		"cover": "node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha",
+		"coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | node_modules/.bin/coveralls",
+		"bithound": "node_modules/.bin/bithound check git@github.com:mehmet-kozan/_integration_test.git"
+	},
+	"homepage": "https://gitlab.com/autokent/_integration_test",
+	"bugs": {
+		"url": "https://gitlab.com/autokent/_integration_test",
+		"email": "mehmet.kozan@live.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://gitlab.com/autokent/_integration_test"
+	},
+	"author": "Mehmet Kozan <mehmet.kozan@live.com>",
+	"license": "MIT",
+	"engines": {
+		"node": ">=6.8.1"
+	}
 }
